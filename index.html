@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <meta name="theme-color" content="#34495e">
+    <meta charset="utf-8">
+
+    <title>Le Havre</title>
+
+    <script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="lib/Flat-UI/dist/css/flat-ui.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <div class="text-center">
+            <h1 class="">Gallerie photo du <span class="text-primary">Havre</span>!</h1>
+        </div>
+
+        <div>
+            <div class="gallerie-element-havre text-center" id="pont">
+                <img src="imgs/pont.jpg" alt="pont" class="img-havre img-rounded img-responsive">
+                <p class="img-comment">Vue depuis le pont du <b><span class="text-primary">Havre</span></b>.</p>
+            </div>
+        </div>
+        <div class="gallerie-element-havre text-center" id="pontvolcan">
+            <img src="imgs/pont_volcan.jpg" alt="pont" class="img-havre img-rounded img-responsive">
+            <p class="img-comment">Vue depuis le même pont du <b><span class="text-primary">Havre</span></b> vers le volcan.</p>
+        </div>
+        <div class="gallerie-element-havre text-center" id="volcan">
+            <img src="imgs/volcan.jpg" alt="volcan" class="img-havre img-rounded img-responsive img-havre-vertical">
+            <p class="img-comment">Le <b>volcan</b> du <span class="text-primary"><b>Havre</b></span>.</p>
+        </div>
+        <div class="gallerie-element-havre text-center" id="mainvolcan">
+            <img src="imgs/main_volcan.jpg" alt="main volcan" class="img-havre img-rounded img-responsive img-havre-vertical">
+            <p class="img-comment">La main du <b>volcan</b> du <span class="text-primary"><b>Havre</b></span>.</p>
+        </div>
+        <div class="gallerie-element-havre text-center" id="bateau">
+            <img src="imgs/bateau.jpg" alt="bateau " class="img-havre img-rounded img-responsive">
+            <p class="img-comment">Vue sur le <b><span class="text-primary">Havre</span></b> depuis le bateau.</p>
+        </div>
+        <div class="gallerie-element-havre text-center" id="merbateau">
+            <img src="imgs/mer_bateau.jpg" alt="mer bateau" class="img-havre img-rounded img-responsive">
+            <p class="img-comment">Le <b>port</b>.</p>
+        </div>
+        <div class="gallerie-element-havre text-center" id="stadepaysage">
+            <img src="imgs/stade_paysage.jpg" alt="stade paysage" class="img-havre img-rounded img-responsive">
+            <p class="img-comment">Vue en hauteur sur le <b><span class="text-primary">Havre</span></b> avec le stade gâchant le paysage.</p>
+        </div>
+        <div class="gallerie-element-havre text-center" id="maison">
+            <img src="imgs/maison.jpg" alt="maison" class="img-havre img-rounded img-responsive">
+            <p class="img-comment">Salon de l'ancienne maison visitée.</p>
+        </div>
+        <div class="gallerie-element-havre text-center" id="stade">
+            <img src="imgs/stade.jpg" alt="stade" class="img-havre img-rounded img-responsive">
+            <p class="img-comment"><b>Stade Océane</b> du <b><span class="text-primary">Havre</span></b>.</p>
+        </div>
+        <div class="gallerie-element-havre text-center" id="eglise">
+            <img src="imgs/cathedrale.jpg" alt="eglise" class="img-havre img-rounded img-responsive">
+            <p class="img-comment">Vue de l'intérieur de l'<b>Église Saint Joseph</b>.</p>
+        </div>
+    </div>
+    <div class="container">
+        <p class="small text-center">&copy; <b>Kristijan - Morgan - Aurèle</b></p>
+    </div>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+</body>
+<script>
+    window.sr = ScrollReveal({
+        duration: 450,
+        reset: true,
+        scale: 0.75,
+        opacity: 0,
+    });
+    sr.reveal('#pont', 50);
+    sr.reveal('#pontvolcan', 50);
+    sr.reveal('#volcan', 50);
+    sr.reveal('#mainvolcan', 50);
+    sr.reveal('#bateau', 50);
+    sr.reveal('#merbateau', 50);
+    sr.reveal('#stadepaysage', 50);
+    sr.reveal('#maison', 50);
+    sr.reveal('#stade', 50);
+    sr.reveal('#eglise', 50);
+</script>
+
+</html>
